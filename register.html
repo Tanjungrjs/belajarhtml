@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="post" action="berhasildaftar.php"></form>
+    <fieldset>
+        <legend> Register</legend>
+        <div>
+            <label for="Nama_Lengkap">Nama Lengkap</label>
+            <input type="text" name="Nama_Lengkap" id="Nama_Lengkap" placeholder="Nama Lengkap . . .">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="Email" placeholder="Email . . .">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="Password" name="Password" id="Password" placeholder="Password . . .">
+        </div>
+        <div>
+            <label for="Jenis_Kelamin">Jenis Kelamin</label>
+            <label> <input type="radio" name="Jenis_Kelamin"  value="Laki-laki">Laki-laki</label>
+            <label> <input type="radio" name="Jenis_Kelamin"  value="Perempuan">Perempuan</label>
+        </div>
+        <div> 
+            <label for="Pendidikan_Terakhir">Pendidikan Terakhir</label>
+            <select name="Pendidikan_Terakhir" id="Pendidikan_Terakhir">
+            <option value="">Pilih</option>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="S1">S2</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+                </div>
+        </fieldset>
+</body>
+</html>
