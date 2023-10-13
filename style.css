@@ -67,3 +67,8 @@ footer {
     margin-bottom: 30px;
     background-color: aliceblue;
 }
+
+.tab_content {
+    display: flex;
+    justify-content: flex-start;
+}

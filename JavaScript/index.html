@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Kalkulator Javascript</h1>
+
+    <div class="container" style="text-align: center;">
+        <form id="Kalkulator">
+            <div class="form-control" style="margin-bottom: 10px;">
+                <label for="angka1">
+                    Angka 1
+                    <input type="number" id="angka1" name="angka1">
+                </label>
+            </div>
+            <div class="form-control" style="margin-bottom: 10px;">
+                <label for="angka2">
+                    Angka 2
+                    <input type="text" id="angka2" name="angka2">
+                </label>
+            </div>
+            <div class="form-control" style="margin-bottom: 10px;">
+                <label for="operator">Pilih Operator:</label>
+                <select id="operator" name="operator">
+                    <option value="tambah">Tambah (+)</option>
+                    <option value="kurang">Kurang (-)</option>
+                    <option value="kali">Kali (*)</option>
+                    <option value="bagi">Bagi (/)</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="hasil">
+                    Hasil :
+                    <span id="hasil"></span>
+                </label>
+            </div>
+
+            <button type="button" onclick="hitung()">Hitung</button>
+        </form>
+    </div>
+
+    <script src="app.js"> </script>
+</body>
+
+</html>
