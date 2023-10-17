@@ -1,0 +1,23 @@
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.navbar_icon img {
+  width: 56px;
+}
+
+.navbar_list {
+  display: flex;
+  gap: 50px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.navbar_list p {
+  cursor: pointer;
+}

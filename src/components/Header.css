@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding-top: 80px;
+  }
+  
+  .header_text {
+    width: 50%;
+  }
+  
+  .header_text_title {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  .header_text_title h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  .header_text_description p {
+    color: #d2cdcd;
+  }
+  
+  .header_text_button button {
+    margin-top: 30px;
+    padding: 25px 30px;
+    color: white;
+    background-color: #050714;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .header_image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .header_image img {
+    width: 80%;
+    border-radius: 99999px;
+  }
+  
