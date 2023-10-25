@@ -1,16 +1,32 @@
 <?php
+require_once './koneksi.php';
 $title = 'register';
 include('components/header.php');
+
+if (isset($_POST['submit'])) {
+    $nama = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $query = mysqli_query($koneksiDatabase , "INSERT INTO `user` SET nama = '$nama', email = '$email', password = '$password'");
+    if ($query) {
+        $_SESSION['log'] = 'True';
+        header('location:index.php');
+    } else {
+        header('location:register.php');
+        }
+}
+
 ?>
 
 <section class="autentikasi py-5">
 <h2 class="text-primary text-center mb-4">Register</h2>
     <div class="container flex justify-content-center align-items-center">
         
-        <form action="Submit" method="post">
+        <form  method="post">
             <div class="gap-3 mb-3">
                 <label for="Name" class="fs-5">Name</label>
-                <input type="text" name="Name" id="Name" class="form-control" >
+                <input type="text" name="name" id="name" class="form-control" >
             </div>
             <div class="gap-3">
                 <label for="Email" class="fs-5">Email</label>
